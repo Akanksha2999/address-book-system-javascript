@@ -129,8 +129,8 @@ let addressBook1 = new AddressBook("Ved", "Bhoir", "Vashi", "NaviMumbai", "Mahar
 let addressBookArray = new Array();
 addressBookArray.push(addressBook);
 addressBookArray.push(addressBook1);
-addressBookArray.forEach(function(addressBook){
-console.log(addressBook);
+addressBookArray.forEach(function (addressBook) {
+    console.log(addressBook);
 });
 try {
     addressBook.setFirstName = "mahima";
@@ -172,3 +172,7 @@ try {
 } catch (e) {
     console.error(e);
 }
+console.log("Checking if contact with name 'Ved' is present in array and if present printing it");
+let findContact = addressBookArray.find(findContact => findContact.firstName === 'Ved');
+console.log(findContact);
+
