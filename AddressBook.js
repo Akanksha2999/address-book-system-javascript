@@ -125,7 +125,13 @@ class AddressBook {
     }
 }
 let addressBook = new AddressBook("Akanksha", "Jadhav", "Ghatkopar", "Mumbai", "Maharashtra", 8765, 123456789, "akankshajadhav2999");
-console.log(addressBook.toString());
+let addressBook1 = new AddressBook("Ved", "Bhoir", "Vashi", "NaviMumbai", "Maharashtra", 9812, 564738290, "vedBhoir1234");
+let addressBookArray = new Array();
+addressBookArray.push(addressBook);
+addressBookArray.push(addressBook1);
+addressBookArray.forEach(function(addressBook){
+console.log(addressBook);
+});
 try {
     addressBook.setFirstName = "mahima";
 } catch (e) {
