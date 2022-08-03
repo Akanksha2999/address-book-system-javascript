@@ -176,3 +176,9 @@ console.log("Checking if contact with name 'Ved' is present in array and if pres
 let findContact = addressBookArray.find(findContact => findContact.firstName === 'Ved');
 console.log(findContact);
 
+console.log("Deleting contact 'Ved' from array");
+let deleteContact = addressBookArray.indexOf("Ved");
+addressBookArray.splice(deleteContact);
+addressBookArray.forEach(function (addressBook) {
+    console.log(addressBook);
+});
